@@ -1,5 +1,7 @@
 package Question1;
 
+import Question3.Prototype;
+
 public class Square extends Shape {
     private final int side;
 
@@ -19,5 +21,10 @@ public class Square extends Shape {
             }
             System.out.println();
         }
+    }
+
+    @Override
+    public Square clone() {
+        return new Square(this.side);
     }
 }

@@ -1,5 +1,10 @@
 package Question1;
 
-public abstract class Shape {
+import Question3.Prototype;
+
+public abstract class Shape implements Prototype {
     public abstract void draw();
+
+    @Override
+    public abstract Shape clone();
 }

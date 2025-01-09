@@ -1,5 +1,7 @@
 package Question1;
 
+import Question3.Prototype;
+
 public class Rectangle extends Shape {
     private final int length;
     private final int width;
@@ -22,5 +24,10 @@ public class Rectangle extends Shape {
             }
             System.out.println();
         }
+    }
+
+    @Override
+    public Rectangle clone() {
+        return new Rectangle(this.length, this.width);
     }
 }

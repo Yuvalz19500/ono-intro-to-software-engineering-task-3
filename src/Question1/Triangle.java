@@ -1,5 +1,7 @@
 package Question1;
 
+import Question3.Prototype;
+
 public class Triangle extends Shape {
     private final int height;
 
@@ -19,5 +21,10 @@ public class Triangle extends Shape {
             }
             System.out.println();
         }
+    }
+
+    @Override
+    public Triangle clone() {
+        return new Triangle(height);
     }
 }
